@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Calculator</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url(img3.jpg);
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border:5px solid aqua;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label, input, select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#result {
+    text-align: center;
+    display: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#result p {
+    margin: 0;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Calculator</h1>
+        <form id="calculator-form">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <label for="activity-level">Activity Level:</label>
+            <select id="activity-level">
+                <option value="sedentary">Sedentary</option>
+                <option value="light">Lightly Active</option>
+                <option value="moderate">Moderately Active</option>
+                <option value="active">Very Active</option>
+            </select>
+            <button type="button" id="calculate-button">Calculate</button>
+        </form>
+        <div id="result">
+            <p>Your daily calorie requirement is: <span id="calories"></span> calories.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
