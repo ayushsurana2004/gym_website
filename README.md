@@ -1,2 +1,2 @@
 # gym_website
-This is a cover page for a gym_website.
+This is a basic architecture for a gym_website.
